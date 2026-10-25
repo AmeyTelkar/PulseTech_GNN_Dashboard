@@ -21,7 +21,7 @@ authors:
 license:
   - MIT
   - CC-BY-4.0
-repository-code: "https://github.com/AmeyTelkar/Faers-pediatric-adr"
+repository-code: "https://github.com/AmeyTelkar/PulseTech_GNN_Dashboard"
 keywords:
   - "pharmacovigilance"
   - "FAERS"
