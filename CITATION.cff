@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "PulseTech: code, derived data and supporting information for a human-in-the-loop web dashboard for pediatric FAERS pharmacovigilance with heterogeneous graph neural network signal exploration"
+type: software
+authors:
+  - family-names: "Telkar"
+    given-names: "Atherv"
+    affiliation: "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+  - family-names: "Telkar"
+    given-names: "Amey"
+    affiliation: "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+  - family-names: "Javalgikar"
+    given-names: "Akshay"
+    affiliation: "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+  - family-names: "Ruikar"
+    given-names: "Darshan"
+    affiliation: "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+  - family-names: "Madanwale"
+    given-names: "Nitin"
+    affiliation: "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+license:
+  - MIT
+  - CC-BY-4.0
+repository-code: "https://github.com/AmeyTelkar/Faers-pediatric-adr"
+keywords:
+  - "pharmacovigilance"
+  - "FAERS"
+  - "pediatrics"
+  - "disproportionality analysis"
+  - "graph neural network"
+  - "HANConv"
+  - "heterogeneous graph"
+  - "dashboard"
+  - "human-in-the-loop"
+  - "MedDRA"
+  - "ICH E11"
+# Code: MIT (LICENSE); data, tables, figures and documents: CC BY 4.0 (DATA_LICENSE.md).
+# After the first Zenodo release, add:  doi: "10.5281/zenodo.XXXXXXX"

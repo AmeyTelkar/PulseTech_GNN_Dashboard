@@ -1,0 +1,21 @@
+# Manuscript and cover letter (confidential - not for GitHub until publication)
+*.tex
+!code/figure_sources/*.tex
+*.aux
+*.log
+*.out
+*.docx
+!Supplementary_Information/*.docx
+*Cover_Letter*
+*Manuscript*
+PulseTech_PLOSONE_*.pdf
+
+# Licensed terminology - never publish
+MedDRA*/
+*.asc
+
+# Python
+__pycache__/
+*.pyc
+.env
+!code/.env.example

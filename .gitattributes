@@ -1,0 +1,3 @@
+# Store every file exactly as committed (no line-ending conversion), so the
+# repository and the Zenodo archive are byte-identical to the submitted files.
+* -text

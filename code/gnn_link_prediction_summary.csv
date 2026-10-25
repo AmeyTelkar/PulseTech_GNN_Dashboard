@@ -1,0 +1,5 @@
+method,roc_auc_mean,roc_auc_sd,aupr_mean,aupr_sd
+PediatricADRHAN (HANConv),0.7951,0.0106,0.82,0.0126
+Common neighbours,0.7964,0.0123,0.8162,0.0112
+Adamic-Adar,0.8026,0.012,0.8338,0.0106
+Preferential attachment,0.8096,0.0135,0.8612,0.0108

@@ -1,0 +1,12 @@
+MedDRA License Note
+====================
+
+This project uses MedDRA (Medical Dictionary for Regulatory Activities)
+for adverse event terminology classification and standardization.
+
+IMPORTANT:
+- MedDRA is proprietary, copyrighted material owned by ICH.
+- The proprietary MedDRA dictionary files are NOT redistributed.
+- MedDRA terms in the analytic datasets are used in a reporting context only.
+
+For access to MedDRA, please visit: https://www.meddra.org/

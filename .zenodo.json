@@ -1,0 +1,50 @@
+{
+  "title": "PulseTech: code, derived data and supporting information for a human-in-the-loop web dashboard for pediatric FAERS pharmacovigilance with heterogeneous graph neural network signal exploration",
+  "upload_type": "software",
+  "description": "<p>Code, derived datasets, supplementary tables and figures accompanying the manuscript <em>PulseTech: Design and implementation of a human-in-the-loop web dashboard for pediatric FAERS pharmacovigilance with heterogeneous graph neural network signal exploration</em>, submitted to PLOS ONE.</p><p>Contents: complete signal-detection results for 6,259 drug&ndash;ADR pairs in four ICH E11(R1) pediatric age bands from the Q1 2025 signal cache, with the counts from which every statistic can be recomputed (S8 Table); the database exports from which the reported counts were taken, with two scripts that re-check those counts and the signal flags; graph-construction, HANConv model, link-ranking, signal-flagging, pipeline and validation scripts; the held-out link-prediction evaluation script with its per-seed results; figure sources; and S1&ndash;S8 Tables.</p><p>Primary data: FDA Adverse Event Reporting System (FAERS), 2021Q1&ndash;2025Q4, publicly available from the U.S. FDA. MedDRA is licensed from the MSSO and no MedDRA dictionary files are redistributed. Licences: source code MIT; data, tables, figures and documents CC BY 4.0 (see LICENSE and DATA_LICENSE.md). See README.md for the reproducibility status and known issues of this version.</p>",
+  "creators": [
+    {
+      "name": "Telkar, Atherv",
+      "affiliation": "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+    },
+    {
+      "name": "Telkar, Amey",
+      "affiliation": "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+    },
+    {
+      "name": "Javalgikar, Akshay",
+      "affiliation": "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+    },
+    {
+      "name": "Ruikar, Darshan",
+      "affiliation": "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+    },
+    {
+      "name": "Madanwale, Nitin",
+      "affiliation": "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+    }
+  ],
+  "license": "mit",
+  "access_right": "open",
+  "keywords": [
+    "pharmacovigilance",
+    "FAERS",
+    "pediatrics",
+    "disproportionality analysis",
+    "graph neural network",
+    "HANConv",
+    "heterogeneous graph",
+    "dashboard",
+    "human-in-the-loop",
+    "MedDRA",
+    "ICH E11"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://fis.fda.gov/extensions/FPD-QDE-FAERS/FPD-QDE-FAERS.html",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset"
+    }
+  ],
+  "notes": "Accompanies a manuscript submitted to PLOS ONE. Add ORCID iDs to the creators before the first release if available."
+}
