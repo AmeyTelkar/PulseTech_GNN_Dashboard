@@ -63,6 +63,9 @@ q = pd.read_excel(DATA / "Quarterly_Reporting_Volume.xlsx", header=1)
 expected_q = [f"{y}Q{i}" for y in range(2021, 2026) for i in range(1, 5)]
 check("quarters loaded", len(q), 20)
 check("quarters are 2021Q1-2025Q4 with none missing", list(q["quarter"]) == expected_q, True)
+ledger = int(q["pediatric_rows"].sum())
+check("load-ledger records summed over the 20 quarters (trend paragraph)", ledger, 3875098)
+check("records superseded by later case versions (ledger sum minus deduplicated total)", ledger - total, 3875098 - 3420201)
 trend = {"2025Q1": (168994, 4875, "2.9%"), "2025Q2": (166743, 5990, "3.6%"),
          "2025Q3": (189658, 6512, "3.4%"), "2025Q4": (155802, 6484, "4.2%")}
 for quarter, (patients, signals, ratio) in trend.items():

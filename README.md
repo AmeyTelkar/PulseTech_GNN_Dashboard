@@ -33,6 +33,8 @@ Disproportionality signals are hypothesis-generating reporting associations, not
 │   ├── gnn_trainer.py, gnn_ablation.py  # Training and ablation
 │   ├── evaluate_link_prediction.py # Held-out link-prediction evaluation (Table 12)
 │   ├── gnn_link_prediction_*.csv  # Its per-seed results and summary
+│   ├── validate_against_labels.py # Comparison of the signals with drug labels (S9 Table)
+│   ├── drug_name_to_sider.csv, label_validation_summary.csv  # Its drug-name list and aggregate output
 │   ├── predictor.py               # Candidate drug–ADR link ranking
 │   ├── config.py, database.py, .env.example  # Settings (secrets only via .env)
 │   ├── verify_statistics.py       # Recomputes every PRR, ROR, IC and EBGM in S8 Table from its counts
@@ -45,7 +47,7 @@ Disproportionality signals are hypothesis-generating reporting associations, not
 ├── dataset/                       # Database exports used to verify the manuscript
 │   └── README.md                  # What each workbook supports
 ├── Submission_Figures/            # Figures as submitted (TIFF / EPS) + PNG previews
-├── Supplementary_Information/     # S1–S8 Tables (Excel) and S1 Fig
+├── Supplementary_Information/     # S1–S10 Tables (Excel) and S1 Fig
 ├── CITATION.cff
 ├── .zenodo.json                   # Zenodo metadata (authors, licence, keywords)
 ├── .gitattributes                 # keeps files byte-identical (no line-ending conversion)
@@ -71,6 +73,8 @@ Disproportionality signals are hypothesis-generating reporting associations, not
 | Flagged signals reported by the dashboard, all five bands | 82,650 |
 | CHILD-band graph (Q1 2025) | 79 drug nodes, 259 ADR nodes, 500 edges |
 | … signal edges shown in the dashboard (Fig 6) | 419 (83.8%) |
+| Flagged pairs that are product-use, exposure, lack-of-effect, device or indication terms (drug labels, SIDER 4.1) | 1,461 of 5,266 (27.7%) |
+| AUC of PRR / ROR lower bound / IC025 / EB05 for label-listed events (clinical-event pairs of covered drugs) | 0.32 / 0.35 / 0.38 / 0.31 (no statistic singles out label-listed reactions) |
 | Held-out link prediction, CHILD band Q1 2025 (803 drugs, 2,537 ADRs, 11,274 edges; 5 seeds) | HANConv ROC-AUC 0.795 ± 0.011, AUPR 0.820 ± 0.013; common neighbours 0.796 / 0.816; Adamic–Adar 0.803 / 0.834; preferential attachment 0.810 / 0.861 |
 | MedDRA check | 1,381 of 1,382 adverse-event terms are current MedDRA 28.1 Preferred Terms |
 
@@ -104,6 +108,7 @@ This any-method rule is more permissive than the conventional Evans criteria (PR
 | Signal-detection results (S8 Table) | Complete output with the counts n11, n1x, nx1, nxx; every PRR, ROR, IC and EBGM is recomputed from them by `code/verify_statistics.py` |
 | Signal flags, signal counts and the 419 graph count | Re-checked by `code/verify_signal_flags.py` (runs from this archive) |
 | Counts reported in the manuscript | Re-checked by `code/verify_reported_counts.py` against `dataset/` and S8 Table; the script lists the few numbers that rest on the dashboard alone |
+| Comparison with drug labels (S9 Table) | Script, drug-name list and aggregate output included; rerunning needs your own SIDER 4.1 and MedDRA 28.1 copies |
 | Link-prediction evaluation (Table 12) | Script and per-seed output included (`code/evaluate_link_prediction.py`, `code/gnn_link_prediction_*.csv`); rerunning it needs the loaded database |
 | Pipeline, statistics, graph construction, model, training, link ranking | Source included (`code/`); running it needs PostgreSQL and the FAERS quarterly files |
 | Fig 3 and S1 Fig | Regenerable from `code/figure_sources/` (pdflatex) |
@@ -118,6 +123,7 @@ This any-method rule is more permissive than the conventional Evans criteria (PR
 2. **Single quarter.** The signal results are the Q1 2025 signal cache, not a pooled 20-quarter analysis.
 3. **Front end.** The dashboard's web front end and web API are not included.
 4. **Graph model.** On held-out CHILD-band edges the HANConv model performs comparably to common neighbours and below Adamic–Adar and preferential attachment; its rankings of unreported pairs are exploratory.
+5. **Flags are not adverse reactions by default.** About a quarter of the flagged pairs are product-use, exposure, lack-of-effect, device or indication terms, and the statistics do not rank label-listed reactions higher (S9 Table). Review flags by term category.
 
 IC is computed as log2((n11 + 0.5)/(E + 0.5)) (`code/analytics_ic.py`), as stated in the manuscript's Eq 2.
 

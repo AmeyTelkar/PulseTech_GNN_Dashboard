@@ -1,0 +1,35 @@
+measure,value,rule,subset,flagged_n,flagged_listed,flagged_pct,unflagged_n,unflagged_listed,unflagged_pct,odds_ratio,or_ci_low,or_ci_high,fisher_p,auc
+term mapping,MedDRA 28.1 PT codes,,,,,,,,,,,,,
+pairs in S8 Table,6259,,,,,,,,,,,,,
+pairs whose drug has label side effects in SIDER 4.1,2074,,,,,,,,,,,,,
+distinct drugs covered,238,,,,,,,,,,,,,
+distinct drugs in S8 Table,532,,,,,,,,,,,,,
+label-listed,,Any-method rule (stored Signal flag),all covered pairs,1952.0,572.0,29.3,122.0,39.0,32.0,0.88,0.6,1.31,0.54,
+label-listed,,Any-method rule (stored Signal flag),clinical-event pairs only (term categories and indications excluded),1306.0,498.0,38.1,44.0,34.0,77.3,0.18,0.09,0.37,3.12e-07,
+label-listed,,"Evans (PRR>=2, chi2>=4, n>=3)",all covered pairs,1787.0,534.0,29.9,287.0,77.0,26.8,1.16,0.88,1.54,0.329,
+label-listed,,"Evans (PRR>=2, chi2>=4, n>=3)",clinical-event pairs only (term categories and indications excluded),1199.0,464.0,38.7,151.0,68.0,45.0,0.77,0.55,1.08,0.134,
+label-listed,,ROR>=2 and ROR CI lower bound >1,all covered pairs,1783.0,542.0,30.4,291.0,69.0,23.7,1.41,1.05,1.87,0.022,
+label-listed,,ROR>=2 and ROR CI lower bound >1,clinical-event pairs only (term categories and indications excluded),1199.0,470.0,39.2,151.0,62.0,41.1,0.93,0.66,1.31,0.66,
+label-listed,,IC025>0,all covered pairs,1404.0,377.0,26.9,670.0,234.0,34.9,0.68,0.56,0.83,0.000205,
+label-listed,,IC025>0,clinical-event pairs only (term categories and indications excluded),997.0,322.0,32.3,353.0,210.0,59.5,0.32,0.25,0.42,5.55e-19,
+label-listed,,EB05>2,all covered pairs,1500.0,422.0,28.1,574.0,189.0,32.9,0.8,0.65,0.98,0.0357,
+label-listed,,EB05>2,clinical-event pairs only (term categories and indications excluded),1073.0,364.0,33.9,277.0,168.0,60.6,0.33,0.25,0.44,1.04e-15,
+composition of flagged pairs,,Any-method rule (stored Signal flag),Indication of the drug (SIDER),5266.0,86.0,1.6,,,,,,,,
+composition of flagged pairs,,Any-method rule (stored Signal flag),Product use or medication error,5266.0,538.0,10.2,,,,,,,,
+composition of flagged pairs,,Any-method rule (stored Signal flag),"Exposure, overdose or poisoning",5266.0,179.0,3.4,,,,,,,,
+composition of flagged pairs,,Any-method rule (stored Signal flag),"Lack of effect, interaction, disease course or death",5266.0,390.0,7.4,,,,,,,,
+composition of flagged pairs,,Any-method rule (stored Signal flag),"Device, social or procedural term",5266.0,268.0,5.1,,,,,,,,
+composition of flagged pairs,,Any-method rule (stored Signal flag),"Clinical event, same Preferred Term on the label",5266.0,498.0,9.5,,,,,,,,
+composition of flagged pairs,,Any-method rule (stored Signal flag),"Clinical event, related term (same HLT) on the label",5266.0,391.0,7.4,,,,,,,,
+composition of flagged pairs,,Any-method rule (stored Signal flag),"Clinical event, not on the label",5266.0,417.0,7.9,,,,,,,,
+composition of flagged pairs,,Any-method rule (stored Signal flag),"Clinical event, drug not in SIDER 4.1",5266.0,2499.0,47.5,,,,,,,,
+"AUC, label-listed vs not (clinical-event pairs, covered drugs)",,PRR,same Preferred Term,1350.0,532.0,,,,,,,,,0.321
+"AUC, label-listed vs not (clinical-event pairs, covered drugs)",,PRR,same or related term (HLT),1350.0,927.0,,,,,,,,,0.419
+"AUC, label-listed vs not (clinical-event pairs, covered drugs)",,ROR 95% CI lower bound,same Preferred Term,1350.0,532.0,,,,,,,,,0.346
+"AUC, label-listed vs not (clinical-event pairs, covered drugs)",,ROR 95% CI lower bound,same or related term (HLT),1350.0,927.0,,,,,,,,,0.424
+"AUC, label-listed vs not (clinical-event pairs, covered drugs)",,IC025,same Preferred Term,1350.0,532.0,,,,,,,,,0.381
+"AUC, label-listed vs not (clinical-event pairs, covered drugs)",,IC025,same or related term (HLT),1350.0,927.0,,,,,,,,,0.446
+"AUC, label-listed vs not (clinical-event pairs, covered drugs)",,EB05,same Preferred Term,1350.0,532.0,,,,,,,,,0.311
+"AUC, label-listed vs not (clinical-event pairs, covered drugs)",,EB05,same or related term (HLT),1350.0,927.0,,,,,,,,,0.399
+"AUC, label-listed vs not (clinical-event pairs, covered drugs)",,Number of cases (n11),same Preferred Term,1350.0,532.0,,,,,,,,,0.507
+"AUC, label-listed vs not (clinical-event pairs, covered drugs)",,Number of cases (n11),same or related term (HLT),1350.0,927.0,,,,,,,,,0.515

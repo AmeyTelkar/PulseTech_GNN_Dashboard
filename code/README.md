@@ -24,6 +24,9 @@ Backend source of the PulseTech dashboard (MIT License, see `../LICENSE`): the 1
 | `evaluate_link_prediction.py` | Held-out link-prediction evaluation (manuscript Table 12): trains PediatricADRHAN with the Table 5 settings on the CHILD band of Q1 2025 for seeds 0–4 and scores the same test pairs with common neighbours, Adamic–Adar and preferential attachment | Needs the loaded PostgreSQL database, torch_geometric and scikit-learn |
 | `gnn_link_prediction_results.csv` | Output of the evaluation: test ROC-AUC and AUPR for every seed and method, with the graph size (803 drugs, 2,537 ADRs, 11,274 edges) and test-set size (1,127 + 1,127) | Data |
 | `gnn_link_prediction_summary.csv` | Mean and SD over the five seeds; these are the values in Table 12 | Data |
+| `validate_against_labels.py` | Comparison of the S8 Table signals with drug labels (manuscript: Comparison with drug labels; S9 Table): coverage by SIDER 4.1, term categories of the flagged pairs, AUC of each statistic for label-listed events | Needs your own copies of SIDER 4.1 (github.com/dhimmel/SIDER4) and MedDRA 28.1; neither is redistributed |
+| `drug_name_to_sider.csv` | The 73 brand names and spelling variants matched to SIDER drug names | Data |
+| `label_validation_summary.csv` | Aggregate output of `validate_against_labels.py` (no SIDER content); these are the numbers in S9 Table and the manuscript | Data |
 | `gnn_ablation.py` | Ablation of graph components (not used for any reported result) | Needs `gnn_trainer.py` |
 | `predictor.py` | Ranks candidate drug–ADR links with a trained model | Needs a trained model |
 | `config.py`, `database.py` | Settings and database sessions; every secret is read from a local `.env` (template: `.env.example`) | — |
@@ -68,6 +71,17 @@ It writes `gnn_link_prediction_results.csv` and `gnn_link_prediction_summary.csv
 | Common neighbours | 0.796 ± 0.012 | 0.816 ± 0.011 |
 | Adamic–Adar | 0.803 ± 0.012 | 0.834 ± 0.011 |
 | Preferential attachment | 0.810 ± 0.014 | 0.861 ± 0.011 |
+
+## Comparison with drug labels
+
+```
+git clone https://github.com/dhimmel/SIDER4 ../SIDER4
+python code/validate_against_labels.py --sider ../SIDER4/data --meddra /path/to/MedDRA_28_1/MedAscii
+```
+
+SIDER 4.1 is licensed CC BY-NC-SA 4.0 and MedDRA by the MSSO, so neither is included here. The script writes only aggregate counts (`label_validation_summary.csv`); `--pairs-out` writes per-pair flags for local use, which must not be published. Without `--meddra` it matches terms by name and skips the term categories.
+
+Result (S9 Table): SIDER 4.1 covers 238 of 532 drugs and 2,074 of 6,259 pairs. Of the 5,266 flagged pairs, 27.7% are product-use, exposure, lack-of-effect, device or indication terms. Among clinical-event pairs of covered drugs, larger PRR, ROR, IC025 and EB05 values do not go with label-listed events (AUC 0.31–0.38; 0.40–0.45 counting related terms).
 
 ## Model
 

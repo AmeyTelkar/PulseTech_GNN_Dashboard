@@ -5,8 +5,8 @@
 torch==2.3.0
 torch_geometric==2.5.3
 numpy==1.26.4
-scikit-learn==1.9.0      # ROC-AUC / AUPR in gnn_trainer.py and evaluate_link_prediction.py
-scipy==1.13.0            # EBGM posterior mixture (analytics_ebgm.py)
+scikit-learn==1.9.0      # ROC-AUC / AUPR in gnn_trainer.py, evaluate_link_prediction.py, validate_against_labels.py
+scipy==1.13.0            # EBGM posterior mixture (analytics_ebgm.py); Fisher test (validate_against_labels.py)
 pandas==2.2.2
 sqlalchemy==2.0.30
 asyncpg==0.29.0
