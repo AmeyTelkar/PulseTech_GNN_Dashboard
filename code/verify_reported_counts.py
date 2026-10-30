@@ -189,7 +189,7 @@ check("ADR preferred terms shared by Dupixent and idursulfase, CHILD band, n11 >
 # ---------------------------------------------------------------- not checkable
 print("""
 Not recomputable from this archive (dashboard or database values):
-  - 1,902 suspect drugs, 4,416 unique adverse-event terms, 82,650 signals across all five bands
+  - 1,902 suspect drugs, 4,416 unique adverse-event terms, 82,650 signals across the four bands and Unknown
   - Table 3 outcome counts; Table 4 per-step row counts and timings
   - Table 10 corpus-wide primary-suspect totals (used above as stated)
   - Genotropin secondary-suspect count 3,828 (Fig 7 tooltip)

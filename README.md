@@ -70,7 +70,7 @@ Disproportionality signals are hypothesis-generating reporting associations, not
 | Flagged signals, four resolved bands, Q1 2025 | 5,266 |
 | … of which also meet the Evans criteria | 4,689 (89.0%) |
 | … pairs meeting EB05 > 2 (all also flagged by another criterion) | 3,516 |
-| Flagged signals reported by the dashboard, all five bands | 82,650 |
+| Flagged signals reported by the dashboard, four bands + Unknown | 82,650 |
 | CHILD-band graph (Q1 2025) | 79 drug nodes, 259 ADR nodes, 500 edges |
 | … signal edges shown in the dashboard (Fig 6) | 419 (83.8%) |
 | Flagged pairs that are product-use, exposure, lack-of-effect, device or indication terms (drug labels, SIDER 4.1) | 1,461 of 5,266 (27.7%) |
