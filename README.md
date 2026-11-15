@@ -6,8 +6,7 @@
 
 **Journal:** PLOS ONE (submitted)
 
-<!-- After the first GitHub release is archived by Zenodo, replace every ZENODO_CONCEPT_DOI in this file (badge line and Citation section) with the concept DOI, e.g. 10.5281/zenodo.1234567 -->
-[![DOI](https://zenodo.org/badge/DOI/ZENODO_CONCEPT_DOI.svg)](https://doi.org/ZENODO_CONCEPT_DOI)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23858299.svg)](https://doi.org/10.5281/zenodo.23858299)
 
 ---
 
@@ -46,7 +45,7 @@ Disproportionality signals are hypothesis-generating reporting associations, not
 │   └── README.md                  # Code documentation and reproducibility status
 ├── dataset/                       # Database exports used to verify the manuscript
 │   └── README.md                  # What each workbook supports
-├── Submission_Figures/            # Figures as submitted (TIFF / EPS) + PNG previews
+├── Submission_Figures/            # Figures as submitted (TIFF) + PNG previews
 ├── Supplementary_Information/     # S1–S10 Tables (Excel) and S1 Fig
 ├── CITATION.cff
 ├── .zenodo.json                   # Zenodo metadata (authors, licence, keywords)
@@ -111,7 +110,7 @@ This any-method rule is more permissive than the conventional Evans criteria (PR
 | Comparison with drug labels (S9 Table) | Script, drug-name list and aggregate output included; rerunning needs your own SIDER 4.1 and MedDRA 28.1 copies |
 | Link-prediction evaluation (Table 12) | Script and per-seed output included (`code/evaluate_link_prediction.py`, `code/gnn_link_prediction_*.csv`); rerunning it needs the loaded database |
 | Pipeline, statistics, graph construction, model, training, link ranking | Source included (`code/`); running it needs PostgreSQL and the FAERS quarterly files |
-| Fig 3 and S1 Fig | Regenerable from `code/figure_sources/` (pdflatex) |
+| Fig 3 and S1 Fig | Regenerable from `code/figure_sources/` (Fig 3: xelatex, then converted to TIFF; S1 Fig: pdflatex) |
 | Figs 1, 2, 4–9 | Dashboard screenshots |
 | Dashboard front end and web API (graph view, top-500 edge selection) | Not included |
 
@@ -158,7 +157,7 @@ Each script prints PASS or FAIL for every number it checks and exits with status
 
 > Telkar A, Telkar A, Javalgikar A, Ruikar D, Madanwale N. PulseTech: Design and implementation of a human-in-the-loop web dashboard for pediatric FAERS pharmacovigilance with heterogeneous graph neural network signal exploration. *PLOS ONE* (submitted).
 
-**Zenodo DOI:** [ZENODO_CONCEPT_DOI](https://doi.org/ZENODO_CONCEPT_DOI)
+**Zenodo DOI:** [10.5281/zenodo.23858299](https://doi.org/10.5281/zenodo.23858299)
 
 ---
 

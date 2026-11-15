@@ -5,23 +5,27 @@ type: software
 authors:
   - family-names: "Telkar"
     given-names: "Atherv"
-    affiliation: "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+    affiliation: "School of Computing, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
   - family-names: "Telkar"
     given-names: "Amey"
-    affiliation: "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+    affiliation: "School of Computing, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
   - family-names: "Javalgikar"
     given-names: "Akshay"
-    affiliation: "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+    affiliation: "School of Pharmacy, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+    orcid: "https://orcid.org/0000-0002-8808-7184"
   - family-names: "Ruikar"
     given-names: "Darshan"
-    affiliation: "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+    affiliation: "School of Computing, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+    orcid: "https://orcid.org/0000-0003-1573-3664"
   - family-names: "Madanwale"
     given-names: "Nitin"
-    affiliation: "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+    affiliation: "School of Pharmacy, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+    orcid: "https://orcid.org/0009-0007-9693-8501"
 license:
   - MIT
   - CC-BY-4.0
 repository-code: "https://github.com/AmeyTelkar/PulseTech_GNN_Dashboard"
+doi: "10.5281/zenodo.23858299"
 keywords:
   - "pharmacovigilance"
   - "FAERS"
@@ -35,4 +39,3 @@ keywords:
   - "MedDRA"
   - "ICH E11"
 # Code: MIT (LICENSE); data, tables, figures and documents: CC BY 4.0 (DATA_LICENSE.md).
-# After the first Zenodo release, add:  doi: "10.5281/zenodo.XXXXXXX"

@@ -33,7 +33,7 @@ Backend source of the PulseTech dashboard (MIT License, see `../LICENSE`): the 1
 | `verify_statistics.py` | Recomputes every PRR, χ², ROR, IC, IC025, EBGM and EB05 in S8 Table from its counts and checks the Signal flag | **Yes** — pandas, openpyxl, numpy, scipy |
 | `verify_signal_flags.py` | Reproduces the S8 Table Signal flags (6,259/6,259), the counts 5,266 / 4,689 / 269, and the 419 CHILD-band signal edges | **Yes** — pandas, openpyxl |
 | `verify_reported_counts.py` | Checks the counts reported in the manuscript against `../dataset/` and S8 Table | **Yes** — pandas, openpyxl |
-| `figure_sources/` | LaTeX/TikZ sources of Fig 3 (model) and S1 Fig (system) | **Yes** — `pdflatex <file>.tex` |
+| `figure_sources/` | LaTeX/TikZ sources of Fig 3 (model) and S1 Fig (system) | **Yes** — Fig 3: `xelatex` (Liberation Sans, an Arial-metric font), then converted to TIFF as the file header describes; S1 Fig: `pdflatex` |
 | `requirements.txt` | Python dependencies, pinned to the versions of the development environment (Python 3.11) | — |
 
 Not included: the dashboard front end and the web API layer (the GNN Network View, including its top-500 edge selection), and the PostgreSQL database itself.

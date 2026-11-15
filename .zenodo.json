@@ -5,23 +5,26 @@
   "creators": [
     {
       "name": "Telkar, Atherv",
-      "affiliation": "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+      "affiliation": "School of Computing, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
     },
     {
       "name": "Telkar, Amey",
-      "affiliation": "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+      "affiliation": "School of Computing, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
     },
     {
       "name": "Javalgikar, Akshay",
-      "affiliation": "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+      "affiliation": "School of Pharmacy, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India",
+      "orcid": "0000-0002-8808-7184"
     },
     {
       "name": "Ruikar, Darshan",
-      "affiliation": "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+      "affiliation": "School of Computing, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India",
+      "orcid": "0000-0003-1573-3664"
     },
     {
       "name": "Madanwale, Nitin",
-      "affiliation": "Department of Computer Science and Engineering, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India"
+      "affiliation": "School of Pharmacy, Maharashtra Institute of Technology (MIT) Vishwaprayag University, Solapur, Maharashtra, India",
+      "orcid": "0009-0007-9693-8501"
     }
   ],
   "license": "mit",
@@ -46,5 +49,5 @@
       "resource_type": "dataset"
     }
   ],
-  "notes": "Accompanies a manuscript submitted to PLOS ONE. Add ORCID iDs to the creators before the first release if available."
+  "notes": "Accompanies a manuscript submitted to PLOS ONE."
 }
